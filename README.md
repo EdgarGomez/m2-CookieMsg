@@ -36,6 +36,7 @@ This is a Magento 2 extension that enables the compliance cookie law message for
 
 **CSS styling** - You can add extra css rules from this box.
 
+![alt tag](http://edgargomez.es/wp-content/uploads/2017/01/m2-cookiemsg.png)
 
 ## Extra
 
