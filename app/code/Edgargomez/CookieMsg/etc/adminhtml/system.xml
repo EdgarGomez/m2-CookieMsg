@@ -3,11 +3,11 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
     <system>
         <tab id="edgargomez" translate="label" sortOrder="10">
-            <label>Edgargomez</label>
+            <label>Edgar G. Extensions</label>
         </tab>
  
         <section id="edgargomez_cookiemsg" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Edgargomez Cookie Message</label>
+            <label>Cookie Message</label>
             <tab>edgargomez</tab>
             <resource>Edgargomez_CookieMsg::edgargomez_cookiemsg</resource>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
@@ -16,7 +16,7 @@
                     <label>Edgargomez Cookie Message</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>
-                        Enable Edgargomez Cookie Message
+                        Enable Cookie Message
                     </comment>
                 </field>
                 <field id="lifetime" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -55,13 +55,6 @@
                 <field id="showcross" translate="label comment" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Show Cross to close message</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
-                <field id="depends_showcross" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Cross Position</label>
-                    <depends>
-                        <field id="*/*/showcross">1</field>
-                    </depends>
-                    <source_model>Edgargomez\CookieMsg\Model\Source\CrossPosition</source_model>
                 </field>
             </group>
             <group id="developer" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
