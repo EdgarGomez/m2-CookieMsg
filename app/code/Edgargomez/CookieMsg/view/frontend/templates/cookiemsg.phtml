@@ -11,24 +11,24 @@ if ($helper->getConfig('edgargomez_cookiemsg/general/enable')) {
 
     //General options
     $lifeTime        = $helper->getConfig('edgargomez_cookiemsg/general/lifetime');
-    $msgPosition     = $helper->getConfig('edgargomez_cookiemsg/general/msg_position');
     $privacyUrl      = $helper->getConfig('edgargomez_cookiemsg/general/privacy_url');
     $privacyLinkText = $helper->getConfig('edgargomez_cookiemsg/general/privacy_link_text');
     $privacyTitle    = $helper->getConfig('edgargomez_cookiemsg/general/privacy_title');
     $message         = $helper->getConfig('edgargomez_cookiemsg/general/privacy_message');
     $showAccept      = $helper->getConfig('edgargomez_cookiemsg/general/showaccept');
     $acceptText      = $helper->getConfig('edgargomez_cookiemsg/general/depends_accepttext');
-    $msgPotision     = $helper->getConfig('edgargomez_cookiemsg/general/msg_position');
+    $msgPosition     = $helper->getConfig('edgargomez_cookiemsg/general/msg_position');
     $showCross       = $helper->getConfig('edgargomez_cookiemsg/general/showcross');
+    $crossPosition   = $helper->getConfig('edgargomez_cookiemsg/general/depends_showcross');
     //Dev options
     $devMode         = $helper->getConfig('edgargomez_cookiemsg/developer/devmode');
     $custom_css      = $helper->getConfig('edgargomez_cookiemsg/developer/css_styling'); 
 
 ?>
     
-    <div id="eg-cm-wrap" class="<?php echo $msgPotision; ?>">
+    <div id="eg-cm-wrap" class="<?php echo $msgPosition; ?>">
         <?php if($showCross): ?>
-            <span id="eg-cm-cc">X</span>
+            <span id="eg-cm-cc" class="<?php echo $crossPosition; ?>">X</span>
         <?php endif; ?>
         <span><?php echo $message; ?><a href="<?php echo $privacyUrl; ?>" id="eg-cm-ll"><?php echo $privacyLinkText; ?></a>
         <br/>
